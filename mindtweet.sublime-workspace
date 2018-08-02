@@ -1,0 +1,856 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"backgro",
+				"background-size"
+			],
+			[
+				"p",
+				"portrait"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"s",
+				"src\tAttr"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"qu",
+				"querySelector"
+			],
+			[
+				"q",
+				"querySelector\t( selectors: DOMString ): Element Element"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"bord",
+				"border-style"
+			],
+			[
+				"rf",
+				"rfc\tFunctional Component"
+			],
+			[
+				"imp",
+				"import"
+			],
+			[
+				"sho",
+				"showAlert"
+			],
+			[
+				"insert",
+				"insertBefore\t( node: Node, child: Node ): Node Node"
+			],
+			[
+				"cr",
+				"createTextNode〔function〕"
+			],
+			[
+				"fetch",
+				"fetchBreed"
+			],
+			[
+				"add",
+				"addEventListener\t( type: DOMString, callback: EventListener, capture?: boolean ): void EventTarget"
+			],
+			[
+				"a",
+				"append\t( nodes_..: Node|DOMString ): void Element"
+			],
+			[
+				"resu",
+				"results"
+			],
+			[
+				"pet",
+				"pets"
+			],
+			[
+				"fet",
+				"fetchJsonp"
+			],
+			[
+				"fo",
+				"form-control-lg"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"se",
+				"select\tTag"
+			],
+			[
+				"tran",
+				"transition\tproperty"
+			],
+			[
+				"box",
+				"box-sizing\tproperty"
+			],
+			[
+				"bo",
+				"border\tproperty"
+			],
+			[
+				"ro",
+				"rotateX()\ttransform"
+			],
+			[
+				"t",
+				"transition\tproperty"
+			],
+			[
+				"bor",
+				"border-radius\tproperty"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"padding",
+				"padding\tproperty"
+			],
+			[
+				"over",
+				"overflow\tproperty"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"pa",
+				"padding-bottom\tproperty"
+			],
+			[
+				"tes",
+				"text-decoration-style\tproperty"
+			],
+			[
+				"fl",
+				"float\tproperty"
+			],
+			[
+				"overflow",
+				"overflow-y\tproperty"
+			],
+			[
+				"te",
+				"textarea\tTag"
+			],
+			[
+				"fi",
+				"fifth_bg.jpg\tw:1400 h:850"
+			],
+			[
+				"col",
+				"col-md-12"
+			],
+			[
+				"pad",
+				"padding\tproperty"
+			],
+			[
+				"seco",
+				"second_item.jpg\tw:300 h:190"
+			],
+			[
+				"fif",
+				"fifth_item.jpg\tw:300 h:190"
+			],
+			[
+				"first",
+				"first_item.jpg\tw:300 h:190"
+			],
+			[
+				"cont",
+				"container-fluid"
+			],
+			[
+				"col-",
+				"col-md-6"
+			],
+			[
+				"le",
+				"letter-spacing\tproperty"
+			],
+			[
+				"inlin",
+				"inline-block\tdisplay"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"l",
+				"logo.png\tw:200 h:60"
+			],
+			[
+				"owl",
+				"owl.theme.scss"
+			],
+			[
+				"ow",
+				"owl.theme.scss"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"ov",
+				"overflow\tproperty"
+			],
+			[
+				"cre",
+				"createElement〔function〕"
+			],
+			[
+				"sec",
+				"secondLeft"
+			],
+			[
+				"parse",
+				"parseFloat\t( s: string ): double Global"
+			],
+			[
+				"sp",
+				"split\t( separator: string, limit: int ): string String"
+			],
+			[
+				"text-",
+				"text-shadow\tproperty"
+			],
+			[
+				"ma",
+				"matches\t( selectors: DOMString ): boolean Element"
+			],
+			[
+				"plateL",
+				"plateListHTML"
+			],
+			[
+				"appen",
+				"appendChild\t( node: Node ): Node Node"
+			],
+			[
+				"console",
+				"console_log"
+			],
+			[
+				"tra",
+				"transform\tproperty"
+			],
+			[
+				"j",
+				"justify-content\tproperty"
+			],
+			[
+				"class",
+				"classList\t: DOMTokenList Element"
+			],
+			[
+				"h",
+				"innerHeight〔variable〕"
+			],
+			[
+				"trans",
+				"transform\tproperty"
+			],
+			[
+				"conso",
+				"console_log"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"mouse",
+				"onmousedown\t: EventHandler Document"
+			],
+			[
+				"inne",
+				"innerWidth〔variable〕"
+			],
+			[
+				"inner",
+				"innerHeight"
+			],
+			[
+				"ev",
+				"event"
+			],
+			[
+				"un",
+				"undefined\t: object Global"
+			],
+			[
+				"up",
+				"update"
+			],
+			[
+				"stro",
+				"strokeStyle"
+			],
+			[
+				"ra",
+				"radius"
+			],
+			[
+				"ani",
+				"animation\t = 'initial' Style CSS"
+			],
+			[
+				"getel",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"can",
+				"canvas"
+			],
+			[
+				"curre",
+				"currentYear"
+			],
+			[
+				"clas",
+				"className\t: DOMString Element"
+			],
+			[
+				"em",
+				"empty"
+			],
+			[
+				"preve",
+				"preventDefault\t(): void Event"
+			],
+			[
+				"queryS",
+				"querySelectorAll\t( selectors: DOMString ): NodeList Document"
+			],
+			[
+				"fle",
+				"flex-direction\tproperty"
+			],
+			[
+				"inl",
+				"inline-block\tdisplay"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"select",
+				"querySelector\t( selectors: DOMString ): Element Document"
+			],
+			[
+				"bi",
+				"birth"
+			],
+			[
+				"tabl",
+				"table"
+			],
+			[
+				"D",
+				"Document\t(): Document Document"
+			],
+			[
+				"hou",
+				"hoursDegrees"
+			],
+			[
+				"hour",
+				"hourHand"
+			],
+			[
+				"mins",
+				"minsDegrees"
+			],
+			[
+				"m",
+				"minsHand"
+			],
+			[
+				"co",
+				"cover\tbackground-size"
+			],
+			[
+				"list",
+				"list-style\tproperty"
+			],
+			[
+				"ques",
+				"questions"
+			],
+			[
+				"nu",
+				"numCorrect"
+			],
+			[
+				"c",
+				"correctAnswer"
+			],
+			[
+				"creat",
+				"createQuestionElement"
+			],
+			[
+				"que",
+				"questions"
+			],
+			[
+				"anima",
+				"animation"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"dis",
+				"displayNext"
+			],
+			[
+				"fon",
+				"font-size\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"trasf",
+				"transform\tproperty"
+			],
+			[
+				"dra",
+				"dragend"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"ht",
+				"Emmet: Wrap With Abbreviation"
+			],
+			[
+				"package control",
+				"Package Control: Add Channel"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 166.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/zhangwenyi/Desktop/Dev/mindtweet"
+	],
+	"file_history":
+	[
+		"/Users/zhangwenyi/Desktop/portfolio/scss/main.scss",
+		"/Users/zhangwenyi/Desktop/portfolio/scss/_mobile.scss",
+		"/Users/zhangwenyi/Desktop/portfolio/scss/_config.scss",
+		"/Users/zhangwenyi/Desktop/portfolio/dist/work.html",
+		"/Users/zhangwenyi/Desktop/portfolio/dist/index.html",
+		"/Users/zhangwenyi/Desktop/portfolio/scss/_menu.scss",
+		"/Users/zhangwenyi/Desktop/portfolio/dist/about.html",
+		"/Users/zhangwenyi/Desktop/portfolio/dist/css/main.css",
+		"/Users/zhangwenyi/Desktop/portfolio/dist/js/main.js",
+		"/Users/zhangwenyi/Desktop/portfolio/package.json",
+		"/Users/zhangwenyi/Desktop/portfolio/.gitignore",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/900ClosestBinarySearchTreeValue.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/ 103BinaryTreeZigzagLevelOrderTraversal.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/563BinaryTreeTilt.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/199BinaryTreeRightSideView.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/145BinaryTreePostorderTraversal.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/144BinaryTreePreorderTraversal.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/94BinaryTreeInorderTraversal.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/623AddOneROwToTree.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/257BinaryTreePaths.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/107BinaryTreeLevelOrderTraversalII.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/102BinaryTreeLevelOrderTraversal.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/173BinarySearchTreeIterator.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/110BalancedBinaryTree.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/637AverageOfLevelsInBinaryTree.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/54201Matrix.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/210CourseScheduleII.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/207CourseSchedule.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/4544SumII.java",
+		"/Users/zhangwenyi/Desktop/react-authentication-app/src/component/auth/Login.js",
+		"/Users/zhangwenyi/Desktop/react-authentication-app/src/component/layout/Navbar.js",
+		"/Users/zhangwenyi/Desktop/react-authentication-app/src/App.css",
+		"/Users/zhangwenyi/Desktop/react-authentication-app/src/component/auth/SigninWidget.js",
+		"/Users/zhangwenyi/Desktop/react-authentication-app/src/component/pages/Home.js",
+		"/Users/zhangwenyi/Desktop/react-authentication-app/src/component/pages/Staff.js",
+		"/Users/zhangwenyi/Desktop/find-a-pet/.babelrc",
+		"/Users/zhangwenyi/Desktop/find-a-pet/js/main.js",
+		"/Users/zhangwenyi/Desktop/find-a-pet/dist/index.html",
+		"/Users/zhangwenyi/Desktop/find-a-pet/index.html",
+		"/Users/zhangwenyi/Desktop/find-a-pet/css/main.css",
+		"/Users/zhangwenyi/Desktop/find-a-pet/js/validate.js",
+		"/Users/zhangwenyi/Desktop/find-a-pet/.cache/16564c5095b54a47e1145da8a8e951e9.json",
+		"/Users/zhangwenyi/Desktop/find-a-pet/dist/main.3f90f1ef.css",
+		"/Users/zhangwenyi/Desktop/find-a-pet/css/select.css",
+		"/Users/zhangwenyi/Desktop/find-a-pet/js/select.js",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/235LowestCommonAncestorOfABinarySearchTree.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/236LowestCommonAncestorOfABinaryTree.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/221MaximalSquare.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/155MinStack.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/416PartitionEqualSubsetSum.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/416PartitionEqualSubsetSum",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/PerfectSquares.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/WordSearch.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/SortColor.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/SortList.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/SearchA2DMatrixII.java",
+		"/Users/zhangwenyi/Desktop/faith2/js/active.js",
+		"/Users/zhangwenyi/Desktop/faith2/style.css",
+		"/Users/zhangwenyi/Desktop/faith2/css/font-awesome.min.css",
+		"/Users/zhangwenyi/Desktop/faith2/css/magnific-popup.css",
+		"/Users/zhangwenyi/Desktop/018-elastic-css-only/css/style.css",
+		"/Users/zhangwenyi/Desktop/Onepage-Web Dev-Personal Site/css/main.css",
+		"/Users/zhangwenyi/Desktop/templatemo_493_snapshot/js/custom.js",
+		"/Users/zhangwenyi/Desktop/20 - Speech Detection/index-FINISHED.html",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/MinimumPathSum.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/mergeIntervals.java",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/JumpGame.java",
+		"/Users/zhangwenyi/Desktop/20 - Speech Detection/index-START.html",
+		"/Users/zhangwenyi/Desktop/20 - Speech Detection/package.json",
+		"/Users/zhangwenyi/Desktop/18 - Adding Up Times with Reduce/index-FINISHED.html",
+		"/Users/zhangwenyi/Desktop/15 - LocalStorage/style.css",
+		"/Users/zhangwenyi/Desktop/17 - Sort Without Articles/index-FINISHED.html",
+		"/Users/zhangwenyi/Desktop/16 - Mouse Move Shadow/index-finished.html",
+		"/Users/zhangwenyi/Documents/LeetCode/LeetCode/_3Sum.java",
+		"/Users/zhangwenyi/Library/Application Support/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
+		"/Users/zhangwenyi/Library/Application Support/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
+		"/Users/zhangwenyi/Desktop/14 - JavaScript References VS Copying/index-START.html",
+		"/Users/zhangwenyi/Desktop/JS-Day16-Scroll/js/script.js",
+		"/Users/zhangwenyi/Desktop/JS-Day16-Scroll/index.html",
+		"/Users/zhangwenyi/Desktop/12 - Key Sequence Detection/index-FINISHED.html",
+		"/Users/zhangwenyi/Desktop/JS-Day15-Key Sequence/index-START.html",
+		"/Users/zhangwenyi/Desktop/Day 16/index.html",
+		"/Users/zhangwenyi/Desktop/11 - Custom Video Player/index.html",
+		"/Users/zhangwenyi/Desktop/10 - Hold Shift and Check Checkboxes/index-FINISHED.html",
+		"/Users/zhangwenyi/Desktop/09 - Dev Tools Domination/index-FINISHED.html",
+		"/Users/zhangwenyi/Desktop/JS-Day9-Array/index-START.html",
+		"/Users/zhangwenyi/Desktop/04 - Array Cardio Day 1/index-FINISHED.html",
+		"/Users/zhangwenyi/Desktop/Day 16/js/script.js",
+		"/Users/zhangwenyi/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/Users/zhangwenyi/Desktop/06 - Type Ahead/style.css",
+		"/Users/zhangwenyi/Desktop/JS-Day5-Drum Kit/js/script.js",
+		"/Users/zhangwenyi/Desktop/01 - JavaScript Drum Kit/index-START.html",
+		"/Users/zhangwenyi/Desktop/hammingDistance.js",
+		"/Users/zhangwenyi/Desktop/06 - Type Ahead/index-FINISHED.html",
+		"/Users/zhangwenyi/Desktop/untitled folder/Day 16/index.html",
+		"/Users/zhangwenyi/Desktop/05 - Flex Panel Gallery/index-FINISHED.html",
+		"/Users/zhangwenyi/Documents/LeetCode/JavaScript30-master/05 - Flex Panel Gallery/index-START.html",
+		"/Users/zhangwenyi/Documents/LeetCode/JavaScript30-master/04 - Array Cardio Day 1/index-FINISHED.html",
+		"/Users/zhangwenyi/Desktop/03 - CSS Variables/index-FINISHED.html",
+		"/Users/zhangwenyi/Desktop/JS-Day2-Particals/css/style.css",
+		"/Users/zhangwenyi/Desktop/JS-Day2-Particals/index.html",
+		"/Users/zhangwenyi/Desktop/JS-Day2-Partical/index.html",
+		"/Users/zhangwenyi/Desktop/JS - Day 1/js/script.js",
+		"/Users/zhangwenyi/Desktop/JS - Day 1/css/style.css",
+		"/Users/zhangwenyi/Desktop/JS - Day 1/index.html",
+		"/Users/zhangwenyi/Desktop/templatemo_493_snapshot/js/toucheffects.js",
+		"/Users/zhangwenyi/Desktop/templatemo_493_snapshot/js/smoothscroll.js",
+		"/Users/zhangwenyi/Downloads/fontawesome-free-5.0.13/advanced-options/metadata/categories.yml",
+		"/Users/zhangwenyi/Desktop/Snapshot/index.html",
+		"/Users/zhangwenyi/Desktop/Day 15 - Upload/js/index.js",
+		"/Users/zhangwenyi/Desktop/Day 15 - Upload/css/style.css",
+		"/Users/zhangwenyi/Desktop/Day 15 - Upload/index.html",
+		"/Users/zhangwenyi/Desktop/Day 14/css/style.css",
+		"/Users/zhangwenyi/Desktop/Day 14/index.html",
+		"/Users/zhangwenyi/Desktop/013-user-gallery/js/index.js",
+		"/Users/zhangwenyi/Desktop/Day 12/index.html",
+		"/Users/zhangwenyi/Desktop/011-these-boots-are-made-for-walking/css/style.css",
+		"/Users/zhangwenyi/Desktop/Day 11/index.html",
+		"/Users/zhangwenyi/Desktop/010-watch/index.html",
+		"/Users/zhangwenyi/Desktop/010-watch/css/style.css",
+		"/Users/zhangwenyi/Desktop/Day 9/index.html",
+		"/Users/zhangwenyi/Desktop/Day 9/css/style.css",
+		"/Users/zhangwenyi/Desktop/未完成/Day 8 - metaballs/index.html",
+		"/Users/zhangwenyi/Desktop/008-metaballs/index.html",
+		"/Users/zhangwenyi/Desktop/Day 8/index.html",
+		"/Users/zhangwenyi/Desktop/007-notifications-search-and-menu/css/style.css",
+		"/Users/zhangwenyi/Desktop/007-notifications-search-and-menu/js/index.js",
+		"/Users/zhangwenyi/Desktop/006-profile/css/style.css"
+	],
+	"find":
+	{
+		"height": 54.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 50.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "mindtweet.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 151.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

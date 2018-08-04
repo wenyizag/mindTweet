@@ -1,3 +1,13 @@
-<p>{{ object.content }}<br/>
-{{ object.user }}<br/>
-{{ object.publish|timesince }}</p>
+
+
+{% extends 'base.html' %}
+
+{% block title %}
+	Tweet Detail | {{ block.super }}
+{% endblock %}
+
+{% block content %}
+	<p>{{ object.content }}<br/>
+		{{ object.user }}<br/>
+		{{ object.publish|timesince }}</p>
+{% endblock %}

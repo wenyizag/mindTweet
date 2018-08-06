@@ -1,13 +1,14 @@
 from django.conf import settings
+from django.urls import reverse
+from django.core.exceptions import ValidationError
 from .validators import validate_content
 from django.db import models
-from django.urls import reverse
 
 
 # Create your models here.
 
 class Tweet(models.Model):
-	user     = models.ForeignKey(settings.AUTH_USER_MODEL)
+	user     = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE,)
 	content  = models.CharField(max_length = 140, validators = [validate_content])
 	updated  = models.DateTimeField(auto_now = True)
 	publish  = models.DateTimeField(auto_now_add = True)

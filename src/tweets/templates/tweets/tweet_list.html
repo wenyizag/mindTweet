@@ -13,34 +13,106 @@
 		<div class="col-sm-9 col-xs-12">
 			{% if not request.GET.q %}
 				<div class=''>
-					{% include "tweets/form.html" with form=create_form action_url=create_url btn='Tweet' %}
+					{% include "tweets/form.html" with form=create_form action_url=create_url btn='Tweet' form_id='form_id'%}
 				</div>
 				<hr>
 			{% endif %}
-			{%for obj in object_list %}
-				<div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      {% if obj.image %}
-                        <img class="media-object" src="..." alt="...">
-                     {% endif %}
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    {{ obj.content }}<br/>
-                    via {{ obj.user }} | {{ obj.timestamp|timesince }} ago | <a href='{{ obj.get_absolute_url }}'>View</a>
-                  </div>
-            	</div>
-				<hr>		
-			{% empty %}
-				{% if request.GET.p %}
-					<p>No Tweet Found.</p>
-				{% else %}
-					<p>No tweets yet.</p>
-				{% endif %}
-			{% endfor %}
+			<div id="list">
+				
+			</div>
 		</div>
 	</div>
+{% endblock %}
+
+{% block script %}
+<script>
+function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+
+$(document).ready(function(){
+	var query = getParameterByName('q');
+	var tweetList = [];
+
+	fetchData();
+
+
+	$('#form_id').submit(function(e){
+		e.preventDefault();
+
+		var this_ = $(this);
+		var formData = this_.serialize();
+		$.ajax({
+			url: "/api/tweet/create/",
+			data: formData,
+			method: "POST",
+			success: function(data){
+				// tweetList = data
+				// console.log(tweetList.user);
+			  	// parseTweets()	
+			  	fetchData();		 
+			},
+			error: function(data){
+			  console.log("error")
+			  console.log(data.statusText);
+			}
+		})
+	})
+
+	function fetchData(){
+		$.ajax({
+			url: "/api/tweet/",
+			data: {
+			  "q": query
+			},
+			method: "GET",
+			success: function(data){
+			  // console.log(data)
+			  tweetList = data
+			  parseTweets()
+			 
+			},
+			error: function(data){
+			  console.log("error")
+			  console.log(data.statusText)
+			}
+		})
+	}
+
+	function parseTweets(){
+		if(tweetList == 0){
+			$("#list").text("No tweets currently found");
+		}else{
+			$("#list").empty();
+			$.each(tweetList, function(key, value){
+				// console.log(key);
+				// console.log(value.user.username);
+				var content = value.content;
+				var user = value.user.username;
+				$('#list').append(
+						`<div class="media">
+							<div class="media-body">
+								${content}<br/>
+								via ${ user } | <a href='#'>View</a>
+							</div>
+						</div>
+						<hr/>`
+					)
+			})
+		}
+	}
+});
+</script>
+
 {% endblock %}
 
 

@@ -45,6 +45,30 @@ $(document).ready(function(){
 
 	fetchData();
 
+	var charRemain = 140;
+	var charTotal = 140;
+
+	$('#form_id').append(`
+			<span id="text-color">${charRemain}</span>
+		`);
+	$('input[type=text], textarea').keyup(function(){
+		console.log(this.value.length);
+		charRemain = charTotal - this.value.length;
+		var textcolor = $('#text-color');
+		textcolor.text(charRemain);
+
+		if(charRemain > 0){
+			textcolor.removeClass("text-danger text-secondary");
+		}else if(charRemain == 0){
+			textcolor.addClass("text-secondary");
+			textcolor.removeClass("text-danger");
+		}else{
+			textcolor.addClass("text-danger");
+			textcolor.RemoveClass("text-secondary");
+		}
+	})
+
+	
 
 	$('#form_id').submit(function(e){
 		e.preventDefault();
@@ -56,10 +80,8 @@ $(document).ready(function(){
 			data: formData,
 			method: "POST",
 			success: function(data){
-				// tweetList = data
-				// console.log(tweetList.user);
-			  	// parseTweets()	
-			  	fetchData();		 
+				this_.find("input[type=text], textarea").val("");
+				attachTweet(data, true);		 
 			},
 			error: function(data){
 			  console.log("error")
@@ -88,25 +110,30 @@ $(document).ready(function(){
 		})
 	}
 
+	function attachTweet(value, prepend){
+		var content = value.content;
+		var time = value.date_display;
+		var user = value.user.username;
+		var myhtml = `<div class="media">
+							<div class="media-body">
+								${content}<br/>
+								via ${ user } | ${ time } |<a href='#'>View</a>
+							</div>
+						</div>
+						<hr/>`;
+		if(prepend){
+			$('#list').prepend(myhtml);
+		}else {
+			$('#list').append(myhtml);
+		}
+	}
+
 	function parseTweets(){
 		if(tweetList == 0){
 			$("#list").text("No tweets currently found");
 		}else{
-			$("#list").empty();
 			$.each(tweetList, function(key, value){
-				// console.log(key);
-				// console.log(value.user.username);
-				var content = value.content;
-				var user = value.user.username;
-				$('#list').append(
-						`<div class="media">
-							<div class="media-body">
-								${content}<br/>
-								via ${ user } | <a href='#'>View</a>
-							</div>
-						</div>
-						<hr/>`
-					)
+				attachTweet(value, false);
 			})
 		}
 	}

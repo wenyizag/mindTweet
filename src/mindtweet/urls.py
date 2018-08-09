@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^$', TweetListView.as_view(), name="home"),
     url(r'^tweet/', include(('tweets.urls', 'tweets'), namespace='tweet')),
     url(r'^api/tweet/', include(('tweets.api.urls', 'api'), namespace="tweetapi")),
+    url(r'^', include(('accounts.urls', 'accounts'), namespace="profile")),
 ]
 
 if settings.DEBUG:

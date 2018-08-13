@@ -84,8 +84,9 @@ $(document).ready(function(){
 				method: "POST",
 				success: function(data){
 					this_.find("input[type=text], textarea").val("");
-					attachTweet(data, true);	
-					charRemain = 140;	 
+					attachTweet(data, true);
+					convertHashTag();	
+					charRemain = 140;	
 				},
 				error: function(data){
 				  console.log("error")
@@ -129,6 +130,7 @@ $(document).ready(function(){
 			  	$('#read-more').hide();
 			  }
 			  parseTweets();
+			  convertHashTag();
 			},
 			error: function(data){
 			  console.log("error");
@@ -166,6 +168,15 @@ $(document).ready(function(){
 				attachTweet(value, false);
 			})
 		}
+	}
+
+	//HashTag
+	function convertHashTag(){
+		$('.media-body').each(function(){
+			var hashtagRegex = /(^|\s)#([\w\d-]+)/g;
+			var hashtag = $(this).html().replace(hashtagRegex, "$1<a href='/tags/$2/'>#$2</a>");
+			$(this).html(hashtag);
+		})
 	}
 });
 </script>

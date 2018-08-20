@@ -140,18 +140,31 @@ $(document).ready(function(){
 	}
 
 	//append the fetched data to HTML
-	function attachTweet(value, prepend){
+	function attachTweet(value, prepend, retweet){
 		var content = value.content;
 		var time = value.date_display;
 		var user = value.user.username;
 		var url = value.user.url;
-		var myhtml = `<div class="media">
+		var myhtml;
+		if(retweet && value.parent){
+			var parent = value.parent;
+			myhtml=`<div class="media">
 							<div class="media-body">
-								${content}<br/>
-								via <a href='${url}'>${ user }</a> | ${ time } |<a href='#'>View</a>
+								<span class="text-secondary">Retweet via ${user} on ${time}</span><br/>
+								${parent.content}<br/>
+								via <a href='${parent.user.url}'>${ parent.user.username }</a> | ${ parent.date_display } | <a href='tweet/${parent.id}'>View</a> | <a href='tweet/${parent.id}/retweet'>Retweet</a>
 							</div>
 						</div>
 						<hr/>`;
+		}else{
+			myhtml = `<div class="media">
+							<div class="media-body">
+								${content}<br/>
+								via <a href='${url}'>${ user }</a> | ${ time } | <a href='tweet/${value.id}/'>View</a> | <a href='tweet/${value.id}/retweet'>Retweet</a>
+							</div>
+						</div>
+						<hr/>`;
+		}
 		if(prepend){
 			$('#list').prepend(myhtml);
 		}else {
@@ -165,17 +178,26 @@ $(document).ready(function(){
 			$("#list").text("No tweets currently found");
 		}else{
 			$.each(tweetList, function(key, value){
-				attachTweet(value, false);
+				if(value.parent){
+					attachTweet(value, false, true);
+				}else{
+					attachTweet(value);
+				}
+				
 			})
 		}
 	}
 
-	//HashTag
+	//HashTag ans @user
 	function convertHashTag(){
 		$('.media-body').each(function(){
 			var hashtagRegex = /(^|\s)#([\w\d-]+)/g;
-			var hashtag = $(this).html().replace(hashtagRegex, "$1<a href='/tags/$2/'>#$2</a>");
-			$(this).html(hashtag);
+			var usernameRegex = /(^|\s)@([\w\d-]+)/g;
+			var currentHtml = $(this).html();
+			var newText;
+			newText = currentHtml.replace(hashtagRegex, "$1<a href='/tags/$2/'>#$2</a>");
+			newText = newText.replace(usernameRegex, "$1<a href='/$2/'>@$2</a>");
+			$(this).html(newText);
 		})
 	}
 });

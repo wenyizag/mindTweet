@@ -14,31 +14,40 @@
                 {% endif %}
             </a>
         </p>
-    </div>
-    <div class='col-sm-9 col-xs-12'>
-         <h1>Tweets</h1>
-         {% for tweet in object.tweet_set.all %}
-         {{ tweet }}<br/>
-         {% endfor %}
 
-         <h1>Following</h1>
+        <h1>Following</h1>
          {% for user in object.profile.get_following.all %}
          <a href="/{{ user.username }}">{{ user.username }}</a></br>
          {% empty %}
          <h4>Not following by any users</h4>
-		 {% endfor %}
+         {% endfor %}
 
-		 <h1>Followed</h1>
+         <h1>Followed</h1>
          {% for profile in object.followed.all %}
          <a href="/{{ profile.user.username }}">{{ profile.user.username }}</a></br>
          {% empty %}
          <h4>Not following by any users</h4>
-		 {% endfor %}
+         {% endfor %}
+    </div>
+    <div class='col-sm-9 col-xs-12'>
+        <h1>Tweets</h1>
+        <div id='tweetContainer' data-url='/api/{{ object.username }}/tweet/'>
+            
+        </div>
+        <button id="read-more" type="button" class="btn btn-primary mx-auto">Read More</button>
+
 
 
 
     </div>
 
 </div>
-
 {% endblock content %}
+
+{% block script %}
+<script>
+$(document).ready(function(){
+  loadTweet("tweetContainer")
+});
+</script>
+{% endblock script %}

@@ -22,8 +22,17 @@ class TweetManager(models.Manager):
 				content = parent_obj.content
 			)
 		obj.save()
-
 		return obj
+
+	def like_toggle(self, user, tweet_obj):
+		if user in tweet_obj.liked.all():
+			is_liked = False
+			tweet_obj.liked.remove(user)
+		else:
+			is_liked = True
+			tweet_obj.liked.add(user)
+		return is_liked
+
 
 class Tweet(models.Model):
 	parent   = models.ForeignKey("self", blank=True, null=True, on_delete=models.SET_NULL)
@@ -31,6 +40,7 @@ class Tweet(models.Model):
 	content  = models.CharField(max_length = 140, validators = [validate_content])
 	updated  = models.DateTimeField(auto_now = True)
 	publish  = models.DateTimeField(auto_now_add = True)
+	liked    = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True, related_name='liked')
 
 	objects = TweetManager()
 	

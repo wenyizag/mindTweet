@@ -63,9 +63,9 @@
       success: function(data){
         console.log(data.like)
         if(data.liked){
-          this_.text("liked");
+          this_.text("Liked");
         }else{
-          this_.text("like");
+          this_.text("Unliked");
         }
       },
       error: function(data){
@@ -191,32 +191,35 @@
       })
     }
 
+    function tweetFormat(value){
+      var verb = "Like";
+      if(value.did_like){
+        verb = "Unlike";
+      }
+
+      var container;
+      var retweet;
+      var content;
+      var like;
+
+      like = ` | <a href='#' class="tweet_like" data_id="${value.id}">${verb}(${value.likes})</a>`;
+      if(value.parent){
+        retweet = `<span class="text-secondary">Retweet via ${value.user.username } on ${value.date_display}</span><br/>`;
+        value = value.parent;
+      }
+      content = `${value.content}<br/>
+                  via <a href='${value.user.url}'>${ value.user.username }</a> | ${ value.date_display } | <a href='tweet/${value.id}/'>View</a> | <a href='tweet/${value.id}/retweet'>Retweet</a>`;
+      if(retweet){
+        container = `<div class="media"><div class="media-body">${retweet}${content}${like}</div></div><hr/>`;
+      }else{
+        container = `<div class="media"><div class="media-body">${content}${like}</div></div><hr/>`;
+      }
+      return container;
+    }
+
     //append the fetched data to HTML
     function attachTweet(value, prepend, retweet){
-      var content = value.content;
-      var time = value.date_display;
-      var user = value.user.username;
-      var url = value.user.url;
-      var myhtml;
-      if(retweet && value.parent){
-        var parent = value.parent;
-        myhtml=`<div class="media">
-                <div class="media-body">
-                  <span class="text-secondary">Retweet via ${user} on ${time}</span><br/>
-                  ${parent.content}<br/>
-                  via <a href='${parent.user.url}'>${ parent.user.username }</a> | ${ parent.date_display } | <a href='tweet/${parent.id}'>View</a> | <a href='tweet/${parent.id}/retweet'>repost</a> | <a href='#' class="tweet_like" data_id="${parent.id}">like</a>
-                </div>
-              </div>
-              <hr/>`;
-      }else{
-        myhtml = `<div class="media">
-                <div class="media-body">
-                  ${content}<br/>
-                  via <a href='${url}'>${ user }</a> | ${ time } | <a href='tweet/${value.id}/'>View</a> | <a href='tweet/${value.id}/retweet'>repost</a> | <a href='#' class="tweet_like" data_id="${value.id}">like</a> 
-                </div>
-              </div>
-              <hr/>`;
-      }
+      var myhtml = tweetFormat(value);
       if(prepend){
         tweetContainer.prepend(myhtml);
       }else {

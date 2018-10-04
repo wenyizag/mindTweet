@@ -32,6 +32,11 @@ class TweetCreateAPIView(generics.CreateAPIView):
 class TweetListAPIView(generics.ListAPIView):
 	serializer_class = TweetSerializer
 	pagination_class = StandardResultsSetPagination
+
+	def def_serializer_context(self, *args, **kwargs):
+		context = super(TweetSerializer, self).def_serializer_context(*args, **kwargs)
+		context['request'] = self.request
+		return conetext
 	
 	def get_queryset(self, *args, **kwargs):
 		request_user = self.kwargs.get("username")
